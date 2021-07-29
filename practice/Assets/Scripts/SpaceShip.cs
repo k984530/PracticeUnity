@@ -25,6 +25,10 @@ public class SpaceShip : MonoBehaviour
             transform.Translate(Vector3.right * speed * Time.deltaTime);
         if (Input.GetKey(KeyCode.LeftArrow))
             transform.Translate(Vector3.left * speed * Time.deltaTime);
+        if (Input.GetKey(KeyCode.Z))
+            transform.Translate(Vector3.forward*speed*Time.deltaTime);
+        if (Input.GetKey(KeyCode.X))
+            transform.Translate(Vector3.back * speed * Time.deltaTime);
         if (Input.GetKey(KeyCode.Space))
             transform.position = new Vector3(0, 0, 0);
     }
